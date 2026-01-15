@@ -1,0 +1,25 @@
+Private Unleashed 2.0 Firmware Installation
+===========================================
+1. 𝙄𝙣𝙨𝙩𝙖𝙡𝙡 𝙩𝙝𝙚 𝙛𝙞𝙧𝙢𝙬𝙖𝙧𝙚 flipper-z-f7-update-unlshd-084e 𝙬𝙞𝙩𝙝 𝙦𝙁𝙡𝙞𝙥𝙥𝙚𝙧
+   - This is needed to have all databases like IR and NFC keys
+
+2. Backup existing setting_user and keeloq_mfcodes from /ext/subghz/assets
+   - These files are KeeLoq mfcodes (for protocols based on KeeLoq coding) and user settings like custom modulations, CC1101 presets and frequencies
+   - On RogueMaster, the file is called setting_user.txt
+. 
+3.Now drop the key.fz file with the key unlocking the firmware to the SD card root (/ext/)
+   - Caution: the check for the key is at stage before USB qFlipper port init. If you skip thius step, you should manually detach the SD card, connect to PC and drop the file to SD card root there.
+
+4.Finally, reboot to DFU on your Flipper Zero. Open up the Settings menu and choose Power, then press Reboot and select Firmware Upgrade. Agree to the message showed.
+   - You could also just select .dfu file in normal mode using qFlipper, it will automatically reboot the FZ and flash the FW. 
+
+5   For those who are in DFU now: choose "Install from file" and choose the .dfu file (skips step 5)
+  - This step is skipped for users who didn't reboot to DFU manually and used qFlipper
+. 
+6.The final step is putting the files from subghz_assets to SD Card/subghz/assets
+   - This can be done from qFlipper if the FZ booted normally
+
+Files collected by 𝙚𝙡𝙞𝙩𝙚_𝙨𝙠𝙞𝙢𝙢𝙚𝙧 (telegram)
+
+
+Warning: all materials provided are just for education and NOT used for anything bad. The authors are NOT responsible for any misuse of provided software.
